@@ -1,0 +1,56 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+
+{% block title %}Projects{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="projects-section">
+  <h2>My Projects</h2>
+
+  <div class="project-card left">
+    <img src="{% static 'images/project1.png' %}" alt="AI Resume Screening">
+    <div class="project-text">
+      <h3>AI-powered Resume Screening and Ranking System</h3>
+      <p>
+        Developed a web app that matches resumes with job descriptions 
+        based on keyword relevance and skill alignment. Designed a clean 
+        and responsive UI for file upload and ranked results.
+      </p>
+      <a href="https://github.com/Kumari-Shruti-0/AI-powered-Resume-Screening-and-Ranking-System" target="_blank" class="btn">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project-card right">
+    <div class="project-text">
+      <h3>YouTube Homepage UI Clone</h3>
+      <p>
+        Built a fully responsive clone of YouTube's homepage using 
+        HTML, CSS, and JavaScript. Implemented grid-based layouts, 
+        category navigation, and interactivity with DOM manipulation.
+      </p>
+      <a href="https://github.com/Kumari-Shruti-0/Youtube_UI_clone" target="_blank" class="btn">GitHub</a>
+    </div>
+    <img src="{% static 'images/project2.png' %}" alt="YouTube Clone">
+  </div>
+
+  <!-- Project 3 -->
+  <div class="project-card left">
+    <img src="{% static 'images/project3.png' %}" alt="Instagram Clone">
+    <div class="project-text">
+      <h3>Instagram UI Clone</h3>
+      <p>
+        Developed a pixel-perfect clone of Instagram's interface with 
+        stories, feed, and sidebar navigation. Added login/signup with 
+        validation and session handling via LocalStorage.
+      </p>
+      <a href="https://github.com/Kumari-Shruti-0/Instagram_UI_clone" target="_blank" class="btn">GitHub</a>
+    </div>
+  </div>
+
+</section>
+{% endblock %}

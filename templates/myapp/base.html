@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <div class="nav">
+        <h1>My Portfolio</h1>
+        <div class="nav-items">
+            <a href="{% url 'about' %}"><b>About</b></a>
+            <a href="{% url 'skills' %}"><b>Skills</b></a>
+            <a href="{% url 'projects' %}"><b>Projects</b></a>
+        </div>
+    </div>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>Portfolio</h2>
+                <p>Learn. Share. Grow.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="{% url "about" %}">About</a>
+                <a href="{% url "skills" %}">Skills</a>
+                <a href="{% url "projects" %}">Projects</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/kumari-shruti-899b5431a/"><img src="{% static "images/linkedin-icon.png" %}" alt="LinkedIn"></a>
+                <a href="https://github.com/Kumari-Shruti-0/"><img src="{% static "images/github-icon.png" %}" alt="GitHub"></a>
+                <a href="https://www.instagram.com/_shrutijhaa_/"><img src="{% static "images/instagram-icon.png" %}" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy 2025 Kumari Shruti. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+
+{% block title %}Home | Portfolio{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="body-items">
+    <div class="content">
+        <h1>Hi !! <br> I am <br> Kumari Shruti</h1>
+        <p id="para1">Computer Science Student | Aspiring Web Developer and Data Analyst.</p><br>
+        <p>
+            I love building clean, interactive, and user-friendly applications using Python, C++, 
+            and web technologies.<br>
+            Currently pursuing B.Sc. (Hons.) Computer Science at Indraprastha College for Women, University of Delhi.
+        </p>
+        <div class="buttons">
+            <a href="{% static 'images/Kumari_Shruti.pdf' %}" download>
+                <button type="button">Resume</button>
+            </a>
+            <a href="mailto:kumarishruti10012005@gmail.com">
+                <button type="button">Contact</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="{% static 'images/img1.png' %}" alt="Profile image">
+    </div>
+</div>
+{% endblock %}

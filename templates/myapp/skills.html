@@ -1,0 +1,50 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+
+{% block title %}My Skills{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/skills.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="skills-section">
+<h2>My Skills</h2>
+  
+  <div class="skill-card left">
+    <div class="text">
+      <h3>Microsoft Office</h3>
+      <p>Word, Excel, PowerPoint — creating documents, preparing presentations, and performing basic data analysis.</p>
+    </div>
+  </div>
+  
+  <div class="skill-card right">
+    <div class="text">
+      <h3>Python Programming</h3>
+      <p>Proficient in Python with Streamlit and Tkinter for web/GUI development.<br>
+      Familiar with data analysis using NumPy, Pandas, and Matplotlib.</p>
+    </div>
+  </div>
+  
+  <div class="skill-card left">
+    <div class="text">
+      <h3>C++ Programming</h3>
+      <p>Skilled in C++ with strong knowledge of OOP and algorithmic problem-solving.</p>
+    </div>
+  </div>
+  
+  <div class="skill-card right">
+    <div class="text">
+      <h3>Web Development</h3>
+      <p>Frontend: HTML, CSS, JavaScript. <br> Backend: Django.</p>
+    </div>
+  </div>
+  
+  <div class="skill-card left">
+    <div class="text">
+      <h3>SQL</h3>
+      <p>Familiar with querying, filtering, and relational database concepts.</p>
+    </div>
+  </div>
+</section>
+{%endblock%}

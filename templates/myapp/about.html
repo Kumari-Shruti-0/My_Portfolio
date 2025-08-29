@@ -1,0 +1,24 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+
+{% block title %}About Me{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="about">
+<h1>About Me</h1>
+<p >Hi, I’m Kumari Shruti,
+a 3rd year B.Sc(H) Computer Science student at Indraprastha College for Women (University of Delhi) with a strong interest in web development, AI, and data analysis.</p><br><br>
+<h2>Who I am ?</h2>
+<p>I love building interactive, user-friendly web applications using Python, C++, and web technologies.
+Beyond coding, I enjoy experimenting with UI/UX design and applying my skills to solve real-world problems.<br><br>
+Outside academics, I am the Vice President of Anvesha (Rotary Club – IPCW),  
+where I focus on event planning, community outreach, and team coordination. I am also a member of Tourism Club of our college.</p><br><br> 
+<h2>What I am looking for?</h2>
+<p>I’m always eager to learn, collaborate, and explore opportunities in software development and technology ,to contribute to a dynamic team, continue learning new technologies, and take on meaningful challenges in the tech industry.
+</p>
+</div>
+{% endblock %}
